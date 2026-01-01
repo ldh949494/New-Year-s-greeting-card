@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <title>年度来信 ·2026 </title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="app" id="app" aria-label="中国传统节日主题互动信笺">
+      <div class="hud" aria-hidden="true">
+        <div class="brand">节日来信</div>
+      </div>
+
+      <main class="scene scene--main" id="sceneMain">
+        <div class="bg" aria-hidden="true">
+          <svg class="ornament ornament--knot" viewBox="0 0 240 240" role="img" aria-label="">
+            <defs>
+              <linearGradient id="knotG" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="rgba(214,169,68,0.92)" />
+                <stop offset="1" stop-color="rgba(255,228,196,0.22)" />
+              </linearGradient>
+            </defs>
+            <path d="M120 30c14 0 25 11 25 25 0 9-5 17-12 21 22 9 38 31 38 57 0 34-27 61-61 61s-61-27-61-61c0-26 16-48 38-57-7-4-12-12-12-21 0-14 11-25 25-25 7 0 14 3 18 8 4-5 11-8 18-8Z" fill="none" stroke="url(#knotG)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+            <path d="M86 184c12 14 22 21 34 21s22-7 34-21" fill="none" stroke="rgba(214,169,68,0.55)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M120 205v22" stroke="rgba(214,169,68,0.45)" stroke-width="10" stroke-linecap="round" />
+          </svg>
+
+          <svg class="ornament ornament--fireworks" viewBox="0 0 360 240" role="img" aria-label="">
+            <g fill="none" stroke="rgba(255,228,196,0.20)" stroke-width="3" stroke-linecap="round">
+              <path d="M70 170l40-40" />
+              <path d="M70 170l55 10" />
+              <path d="M70 170l10 55" />
+              <path d="M70 170l-45 15" />
+              <path d="M70 170l-10-55" />
+            </g>
+            <g fill="none" stroke="rgba(214,169,68,0.22)" stroke-width="3" stroke-linecap="round">
+              <path d="M290 70l-42 36" />
+              <path d="M290 70l-52-12" />
+              <path d="M290 70l-6-56" />
+              <path d="M290 70l56 18" />
+              <path d="M290 70l10 54" />
+            </g>
+          </svg>
+
+          <svg class="ornament ornament--clouds" viewBox="0 0 520 260" role="img" aria-label="">
+            <path d="M86 168c0-22 18-40 40-40 11 0 22 4 29 12 8-18 26-30 47-30 29 0 52 22 54 51 20 2 36 20 36 42 0 22-18 40-40 40H132c-26 0-46-21-46-46Z" fill="none" stroke="rgba(255,228,196,0.16)" stroke-width="3" />
+            <path d="M270 86c0-19 15-34 34-34 10 0 18 4 25 10 7-13 21-22 37-22 24 0 44 20 44 44v2c19 3 34 20 34 41 0 24-20 44-44 44H313c-25 0-46-21-46-46Z" fill="none" stroke="rgba(214,169,68,0.16)" stroke-width="3" />
+          </svg>
+          <div class="gilt" aria-hidden="true"></div>
+          <svg class="giltFirework giltFirework--a" viewBox="0 0 200 200" role="img" aria-label="">
+            <defs>
+              <linearGradient id="giltFwA" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="rgba(214,169,68,0.82)" />
+                <stop offset="0.55" stop-color="rgba(255,228,196,0.58)" />
+                <stop offset="1" stop-color="rgba(214,169,68,0.22)" />
+              </linearGradient>
+            </defs>
+            <g fill="none" stroke="url(#giltFwA)" stroke-width="2.4" stroke-linecap="round" opacity="0.9">
+              <path d="M100 24v28" />
+              <path d="M100 148v28" />
+              <path d="M24 100h28" />
+              <path d="M148 100h28" />
+              <path d="M46 46l20 20" />
+              <path d="M134 134l20 20" />
+              <path d="M46 154l20-20" />
+              <path d="M134 66l20-20" />
+              <path d="M76 34l10 26" />
+              <path d="M124 34l-10 26" />
+              <path d="M34 76l26 10" />
+              <path d="M166 76l-26 10" />
+              <path d="M34 124l26-10" />
+              <path d="M166 124l-26-10" />
+              <path d="M76 166l10-26" />
+              <path d="M124 166l-10-26" />
+            </g>
+            <g fill="rgba(214,169,68,0.30)">
+              <circle cx="100" cy="24" r="3.2" />
+              <circle cx="24" cy="100" r="2.8" />
+              <circle cx="176" cy="100" r="3.0" />
+              <circle cx="100" cy="176" r="2.8" />
+            </g>
+          </svg>
+
+          <svg class="giltFirework giltFirework--b" viewBox="0 0 200 200" role="img" aria-label="">
+            <defs>
+              <linearGradient id="giltFwB" x1="0" x2="1" y1="1" y2="0">
+                <stop offset="0" stop-color="rgba(214,169,68,0.74)" />
+                <stop offset="0.50" stop-color="rgba(255,228,196,0.46)" />
+                <stop offset="1" stop-color="rgba(214,169,68,0.18)" />
+              </linearGradient>
+            </defs>
+            <g fill="none" stroke="url(#giltFwB)" stroke-width="2.2" stroke-linecap="round" opacity="0.85">
+              <path d="M100 34v20" />
+              <path d="M100 146v20" />
+              <path d="M34 100h20" />
+              <path d="M146 100h20" />
+              <path d="M56 56l16 16" />
+              <path d="M128 128l16 16" />
+              <path d="M56 144l16-16" />
+              <path d="M128 72l16-16" />
+              <path d="M84 42l6 18" />
+              <path d="M116 42l-6 18" />
+              <path d="M42 84l18 6" />
+              <path d="M158 84l-18 6" />
+              <path d="M42 116l18-6" />
+              <path d="M158 116l-18-6" />
+              <path d="M84 158l6-18" />
+              <path d="M116 158l-6-18" />
+            </g>
+            <circle cx="100" cy="100" r="14" fill="rgba(255,228,196,0.06)" stroke="rgba(214,169,68,0.20)" />
+          </svg>
+        </div>
+
+        <div class="center">
+          <div class="avatar" aria-label="头像">
+            <div class="avatar__inner">
+              <img class="avatar__img" src="./1.jpg" alt="头像" />
+            </div>
+          </div>
+
+          <header class="title">
+            <p class="title__tag">2026 · ldh · 深度锐评</p>
+            <h1 class="title__main">开年来信</h1>
+            <p class="title__sub">轻触信封，展开一张年度点评。</p>
+          </header>
+
+          <button class="envelope" id="openEnvelope" type="button" aria-label="打开信封" aria-haspopup="dialog" aria-controls="letterDialog" aria-expanded="false">
+            <span class="envelope__paper" aria-hidden="true"></span>
+            <span class="envelope__back" aria-hidden="true"></span>
+            <span class="envelope__front" aria-hidden="true"></span>
+            <span class="envelope__flap" aria-hidden="true"></span>
+            <span class="envelope__seal" aria-hidden="true"></span>
+          </button>
+
+          <div class="tapHint" aria-hidden="true">点击 / 轻触打开</div>
+        </div>
+      </main>
+
+      <section class="letterOverlay" id="letterDialog" role="dialog" aria-modal="true" aria-hidden="true" aria-label="信纸内容">
+        <div class="letterOverlay__backdrop" data-close="true" aria-hidden="true"></div>
+        <div class="letter">
+          <button class="letter__close" id="closeLetter" type="button" aria-label="返回主界面">返回</button>
+          <article class="paper" role="document" aria-label="桃花笺">
+            <header class="paper__header">
+              <div class="paper__mark">最佳XXX</div>
+              <h2 class="paper__title">新岁安康</h2>
+              <p class="paper__subtitle">愿喜乐常伴，万事皆顺。</p>
+            </header>
+            <div class="paper__body">
+              <p>烟火起 · 照人间 · 喜乐无边 · 举杯敬此年</p>
+              <p>Good morning, and in case I don't see you, Good afternoon, Good evening, And good night.<p>
+              <p>万事胜意，顺问冬安！</p>
+            </div>
+            <footer class="paper__footer">— 祝福寄至 · 此刻启封</footer>
+          </article>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
