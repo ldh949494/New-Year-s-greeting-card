@@ -31,9 +31,10 @@ html,body{height:100%}
 body{
   margin:0;
   overflow:hidden;
-  background:radial-gradient(1200px 700px at 60% 20%, rgba(214,169,68,0.14), transparent 55%),
-    radial-gradient(1100px 720px at 20% 80%, rgba(255,228,196,0.09), transparent 60%),
-    linear-gradient(180deg, var(--red-900), var(--red-700));
+  background:
+    radial-gradient(1400px 900px at 60% 15%, rgba(235,197,118,0.18), transparent 55%),
+    radial-gradient(1100px 900px at 20% 85%, rgba(255,230,200,0.12), transparent 60%),
+    linear-gradient(180deg, var(--red-900), var(--red-800) 40%, var(--red-700));
   color:var(--ink-100);
   font-family:ui-serif, "Songti SC", "STSong", "Noto Serif SC", serif;
   -webkit-tap-highlight-color:transparent;
